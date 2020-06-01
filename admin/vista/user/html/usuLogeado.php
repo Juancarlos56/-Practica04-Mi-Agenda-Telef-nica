@@ -25,10 +25,10 @@
          </header>
 
   <form class="menuHorizontal" id= "menu"> 
-    <input type="button"  id="agregar" name="agregar" value="AGREGAR" onclick=" return elegir(this )">
-    <input type="button"  id="modificar" name="modificar" value="MODIFICAR" onclick ="return elegir(this)">
-    <input type="button"  id="eliminar" name="eliminar" value="ELIMINAR" onclick ="return elegir(this)" >  
-    <input type="button"  id="cuenta" name="cuenta" value="CUENTA" onclick ="return elegir(this)"  > 
+    <input type="button"  id="agregar" name="agregar" value="AGREGAR" onclick="location.href='../../../controladores/user/telefono/agregar.php'">
+    <input type="button"  id="modificar" name="modificar" value="MODIFICAR" onclick ="location.href='../../../controladores/user/telefono/modificar.php'">
+    <input type="button"  id="eliminar" name="eliminar" value="ELIMINAR" onclick="location.href='../../../controladores/user/telefono/eliminar.php'" >  
+    <input type="button"  id="cuenta" name="cuenta" value="CUENTA" onclick="location.href='../../../controladores/user/cuenta/cuenta.php'"  > 
    </form> 
 
    <div class="separador"> 
@@ -37,7 +37,9 @@
         <input type="text" id="cedula" name="cedula" value="" onkeyup="return buscarPorCedula()" onblur="buscarPorCedula()">
         <input type="button" id="buscarCed" name="buscarCed" value="Buscar" onclick="buscarPorCedula()">
    </form>
+
    <div class="separador"> 
+
    <div id="informacion"><b>Datos de la persona</b></div>
    
    
