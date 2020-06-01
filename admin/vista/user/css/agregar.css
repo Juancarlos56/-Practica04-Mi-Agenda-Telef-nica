@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 
 
 .menuHorizontalCompleto {
@@ -9,6 +12,7 @@
 
 .logo {
    float: left;
+   width: 39%;
 }
 
 .menuHorizontal{
@@ -20,7 +24,33 @@
 
 H1{
     float: left;
+    width: 50%;
 }
+
+
+#menu2{
+    width: 70%;
+    height: 60px;
+    padding: 10px 50px 10px 50;
+    background-color: white;
+    text-align: center;
+    float: left;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 0.5%;
+ }
+ 
+ #menu2 input{
+    font-size: 19px;
+    padding: 22px 5% 15px 5%;
+    /* margin-left: 11%; */
+    background-color: #f7f7f7;
+    color: #151514;
+    text-align: center;
+    display: inline-block;
+    font-family: none;
+    border-style: none;;
+ }
 
  #menu{
     width: 75%;
@@ -55,12 +85,17 @@ H1{
 #menu label{
     font-size: 25px;
     text-align: left;
+    float: left;
 }
 
 
 
 
-
+#tabla{
+    margin-top: 2%;
+    background-color: #ffffff87;
+    width: 100%;
+ }
 
 
 .separador {

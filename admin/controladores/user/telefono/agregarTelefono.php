@@ -18,7 +18,7 @@
     $sql = "INSERT INTO telefonos VALUES (0, '$tipo', '$telefono', '$operadora','$codigo')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Se ha agregado un nuevo telefono!!!<br>";
+        header("Location: ../../../../admin/vista/user/html/agregar.php");
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn) . "<br>";
     }

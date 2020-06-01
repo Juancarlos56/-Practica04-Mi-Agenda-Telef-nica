@@ -24,7 +24,7 @@ function validarNumero(elemento)
 
 function verificarTelefono (celu) {
 
-    if (celu.value.length === 10 ){
+    if ((celu.value.length === 10)||(celu.value.length === 9) ){
       document.getElementById('mensajeTelefono').innerHTML = ' Telefono aceptado';
       correcto = comentarioCorrecto(celu);
       console.log ('num valido');
@@ -32,7 +32,7 @@ function verificarTelefono (celu) {
     }else 
     {
           celu.value= "";
-          document.getElementById('mensajeTelefono').innerHTML = ' Ingresar 10 numeros'; 
+          document.getElementById('mensajeTelefono').innerHTML = ' Ingresar 10 numeros para celulares y 9 en convencionales'; 
           error= comentarioError(celu);
           console.log ('no num valido')
           return false;

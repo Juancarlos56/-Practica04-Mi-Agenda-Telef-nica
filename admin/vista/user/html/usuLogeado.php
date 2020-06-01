@@ -29,6 +29,7 @@
     <input type="button"  id="modificar" name="modificar" value="MODIFICAR" onclick ="location.href='modifcar.php'">
     <input type="button"  id="eliminar" name="eliminar" value="ELIMINAR" onclick="location.href='eliminar.php'" >  
     <input type="button"  id="cuenta" name="cuenta" value="CUENTA" onclick="location.href='cuenta.php'"  > 
+    <input type="button"  id="finalizar" name="finalizar" value="Cerrar Sesion" onclick="location.href='../../../../config/cerrarSesion.php'"  > 
    </form> 
 
    <div class="separador"> 
