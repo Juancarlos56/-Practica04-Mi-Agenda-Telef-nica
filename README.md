@@ -1,5 +1,4 @@
 # Practica04-MiAgendaTelefonica
-# Dillinger
 ### ACTIVIDADES DESARROLLADAS
 #### El diagrama E-R de la solución propuesta.
 
