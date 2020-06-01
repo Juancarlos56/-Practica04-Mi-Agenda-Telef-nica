@@ -7,22 +7,22 @@
 <body>
     <?php
     //incluir conexión a la base de datos
-    include '../../../config/conexionBD.php';
+    include '../../../../config/conexionBD.php';
     $codigo = $_POST["codigo"];
     $cedula = isset($_POST["cedula"]) ? trim($_POST["cedula"]) : null;
-    $telefono = isset($_POST["telefono"]) ? mb_strtoupper(trim($_POST["telefono"]), 'UTF-8') : null;
-    $apellidos = isset($_POST["tipo"]) ? mb_strtoupper(trim($_POST["tipo"]), 'UTF-8') : null;
-    $direccion = isset($_POST["operadora"]) ? mb_strtoupper(trim($_POST["operadora"]), 'UTF-8') : null;
-    
+    $telefono = isset($_POST["telefono"]) ? trim($_POST["telefono"]) : null;
+    $tipo = isset($_POST["tipo"]) ? trim($_POST["tipo"]) : null;
+    $operadora = isset($_POST["operadora"]) ? trim($_POST["operadora"]) : null;
+   
 
-    $sql = "INSERT INTO usuario VALUES (0, '$nombres', '$apellidos', '$direccion','$correo', MD5('$contrasena'), '$fechaNacimiento', '$rol', 'N', null, null)";
+    $sql = "INSERT INTO telefonos VALUES (0, '$tipo', '$telefono', '$operadora','$codigo')";
 
     if ($conn->query($sql) === TRUE) {
-    echo "Se ha actualizado los datos personales correctamemte!!!<br>";
+        echo "Se ha agregado un nuevo telefono!!!<br>";
     } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn) . "<br>";
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn) . "<br>";
     }
-    echo "<a href='../../vista/usuario/index.php'>Regresar</a>";
+        echo "<a href='../../../vista/user/html/agregar.php'>Regresar</a>";
     $conn->close();
     ?>
 </body>
