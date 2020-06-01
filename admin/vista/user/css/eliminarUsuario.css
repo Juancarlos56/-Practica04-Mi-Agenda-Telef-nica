@@ -20,6 +20,12 @@
  H1{
     float: left;
  }
+
+ #tabla{
+    margin-top: 2%;
+    background-color: #ffffff87;
+    width: 100%;
+ }
  
  #menu{
     width: 70%;
@@ -55,6 +61,9 @@
  #menu label{
     font-size: 25px;
     text-align: left;
+    float: left;
+    margin-left: 6%;
+    margin-top: 0.5%;
  }
  
  .separador {

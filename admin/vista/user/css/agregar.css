@@ -55,12 +55,17 @@ H1{
 #menu label{
     font-size: 25px;
     text-align: left;
+    float: left;
 }
 
 
 
 
-
+#tabla{
+    margin-top: 2%;
+    background-color: #ffffff87;
+    width: 100%;
+ }
 
 
 .separador {
