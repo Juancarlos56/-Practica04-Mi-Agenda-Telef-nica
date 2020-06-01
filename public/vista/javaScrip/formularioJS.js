@@ -278,7 +278,8 @@ function numeroTelefono(elemento){
         return true;
     }else{
         elemento.value = "";
-        document.getElementById('mensajeTelefono').innerHTML = 'El telefono debe constar de 10 numeros para moviles o 7 para fijos';
+        document.getElementById('mensajeTelefono').innerHTML = 
+        'El telefono debe constar de 10 numeros para moviles o 7 para fijos';
         return false;
         
     }
