@@ -20,23 +20,25 @@
 
     <header >
         <div class="logo" >
-            <a href="index.html" title="Ir a la Pagina principal"> <img src="../../../../config/Multimedia/images/LOGO.png" alt="Logo" id="leftFloat" width="78px" height="78px"> </a>
+            <a href="../../../../public/vista/paginasHTML/index.html" title="Ir a la Pagina principal"> <img src="../../../../config/Multimedia/images/LOGO.png" alt="Logo" id="leftFloat" width="78px" height="78px"> </a>
          </div>
          </header>
 
   <form class="menuHorizontal" id= "menu"> 
     <input type="button"  id="agregar" name="agregar" value="AGREGAR" onclick=" return elegir(this )">
     <input type="button"  id="modificar" name="modificar" value="MODIFICAR" onclick ="return elegir(this)">
-    <input type="button"  id="buscar" name="buscar" value="BUSCAR" onclick ="return elegir(this) " >
     <input type="button"  id="eliminar" name="eliminar" value="ELIMINAR" onclick ="return elegir(this)" >  
     <input type="button"  id="cuenta" name="cuenta" value="CUENTA" onclick ="return elegir(this)"  > 
    </form> 
+
    <div class="separador"> 
        
    <form id="Formulario01" onsubmit="return buscarPorCedula()" style="display: inline;">
-                <input type="text" id="cedula" name="cedula" value="" onkeyup="return buscarPorCedula()" onblur="buscarPorCedula()">
-                <input type="button" id="buscarCed" name="buscarCed" value="Buscar" onclick="buscarPorCedula()">
-            </form>
+        <input type="text" id="cedula" name="cedula" value="" onkeyup="return buscarPorCedula()" onblur="buscarPorCedula()">
+        <input type="button" id="buscarCed" name="buscarCed" value="Buscar" onclick="buscarPorCedula()">
+   </form>
+   <div class="separador"> 
+   <div id="informacion"><b>Datos de la persona</b></div>
    
    
 

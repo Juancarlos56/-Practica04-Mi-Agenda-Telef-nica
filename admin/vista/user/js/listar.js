@@ -22,7 +22,6 @@ function elegir(elemento){
 }
 
 
-
 function buscarPorCedula() {
   var cedula = document.getElementById("cedula").value;
   if (cedula == "") {

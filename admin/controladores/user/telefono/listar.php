@@ -1,6 +1,6 @@
 <?php
     //incluir conexión a la base de datos
-    include "../../config/conexionBD.php";
+    include "../../../../config/conexionBD.php";
     $cedula = $_GET['cedula'];
 
     $sql = "SELECT u.usu_cedula, u.usu_nombres, u.usu_apellidos, u.usu_correo, t.tel_tipo, t.tel_operadora, t.tel_numero FROM usuario u, telefonos t WHERE (u.usu_codigo = t.usu_codigo) AND (u.usu_cedula LIKE '%$cedula%');";
