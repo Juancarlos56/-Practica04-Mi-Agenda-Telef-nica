@@ -26,11 +26,11 @@
         $_SESSION [ 'cedula'] = $cedula;
         $_SESSION [ 'codigo'] = $codigo;
         
-        if ($rol == 'admin') {
+        if (($rol == 'admin')||($rol == 'ADMIN')) {
             header("Location: ../../admin/vista/administrador/paginasAdminHTML/paginaAdmi.php");
         }
 
-        if ($rol == 'user') {
+        if (($rol == 'user')||($rol == 'USER')) {
             header("Location: ../../admin/vista/user/html/usuLogeado.php");
         }
         

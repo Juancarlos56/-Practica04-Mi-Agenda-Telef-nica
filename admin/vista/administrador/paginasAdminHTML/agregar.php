@@ -32,10 +32,11 @@
                     <ol>       
                         <li><a href="agregar.php">Agregar</a> </li>
                         <li><a href="modificar.php">Modificar</a> </li>
-                        <li><a href="eliminar.html">Eliminar</a> </li>
+                        <li><a href="eliminar.php">Eliminar</a> </li>
                         <li><a href="listarTelefonos.php">Buscar y Listar</a> </li>
-                        <li><a href="contrasena.html">Cambio Contraseña</a> </li>
+                        <li><a href="contrasena.php">Cambio Contraseña</a> </li>
                         <li><a href="../../../../config/cerrarSesion.php">Cerrar Sesion</a> </li>
+                    </ol> 
                     </ol> 
                 </nav>
 
