@@ -52,10 +52,22 @@
    border-style: none;;
 }
  
- H1{
-    float: left;
-    width: 42%;
- }
+
+
+ H3{
+   
+   float: right;
+    width: 72%;
+    margin-top: 25px;
+}
+
+
+H1{
+   margin-top: 30px;
+   float: right;
+   width: 80%;
+}
+
 
  #tabla{
     margin-top: 2%;
@@ -68,7 +80,7 @@
     height: 400px;
     margin-top: 9%;
     padding: 45px 45px 45px 45px;
-    background-color: #e6e6e68f;
+    background-color: #cccccc8f;
     text-align: left;
     float: left;
     position: absolute;

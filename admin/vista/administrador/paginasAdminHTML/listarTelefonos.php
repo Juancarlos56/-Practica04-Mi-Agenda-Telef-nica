@@ -29,7 +29,7 @@
 </head>
 <!--etiqueta body se utiliza para marcar el contenido
 que aparecerá en la página web-->
-<body>
+<body background="../../../../config/Multimedia/imagenesParaSesion/fondoAgregar.png">
 
     <?php  
         session_start();

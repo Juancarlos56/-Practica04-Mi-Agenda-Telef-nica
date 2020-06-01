@@ -12,9 +12,9 @@
             ;
             }
         </style>
-    <title>Document</title>
+    <title>agregar Telefono</title>
 </head>
-<body background="../../../../config/Multimedia/imagenesParaSesion/fondoCuenta.png">
+<body background="../../../../config/Multimedia/imagenesParaSesion/fondoUsuario.png">
  
     <form class="menuHorizontal2" id= "menu2"> 
         <input type="button"  id="agregar" name="agregar" value="AGREGAR" onclick="location.href='agregar.php'">
@@ -35,7 +35,7 @@
     <header >
         <div class="logo" >
             <a href="../../../../public/vista/paginasHTML/index.html" title="Ir a la Pagina principal"> <img src="../../../../config/Multimedia/images/LOGO.png" alt="Logo" id="leftFloat" width="78px" height="78px"></a>
-            <h1>MODIFICAR TELEFONO</h1> 
+            <h3>MODIFICAR TELEFONO</h3> 
          </div>
     </header>
     

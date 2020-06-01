@@ -14,7 +14,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
+<body background="../../../../config/Multimedia/imagenesParaSesion/fondoAgregar.png">
     <?php  
         session_start();
         if(!isset($_SESSION['isLogged'])|| $_SESSION['isLogged'] === false ){
@@ -24,7 +24,7 @@
 
     <header>
         <div class="logo">
-            <a href="paginaAdmi.php" title="Ir a la Pagina principal" id="leftFloat"> <img src="../../../../config/Multimedia/images/LOGO.png" alt="Logo" style="width: 125px;"> </a>
+            <a href="paginaAdmi.php" title="Ir a la Pagina principal" id="leftFloat"> <img src="../../../../config/Multimedia/images/LOGO.png" alt="Logo" width="100" height="100"> </a>
             
             <div id="rightFloat"> 
                 

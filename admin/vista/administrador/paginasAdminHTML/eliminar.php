@@ -60,7 +60,7 @@
        
         <div class="separador"> 
 
-        <article class="listado">
+        <form id="formulario01">
             <header>
                 <h2 class="Subtitulos" style="font-size: 30px; text-align: center;">Seleccione su metodo de Busqueda</h2> 
             </header>
@@ -86,7 +86,7 @@
             <div id="informacion"><b>Datos de la persona</b></div>
 
 
-        </article>
+        </form>
             
     </section>
 </body>

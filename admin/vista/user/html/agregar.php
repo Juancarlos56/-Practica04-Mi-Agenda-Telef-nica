@@ -14,7 +14,7 @@
         </style>
     <title>Document</title>
 </head>
-<body background="../../../../config/Multimedia/imagenesParaSesion/fondoAgregar.png">
+<body background="../../../../config/Multimedia/imagenesParaSesion/fondoUsuario.png">
     <form class="menuHorizontal2" id= "menu2"> 
         <input type="button"  id="agregar" name="agregar" value="AGREGAR" onclick="location.href='agregar.php'">
         <input type="button"  id="modificar" name="modificar" value="MODIFICAR" onclick ="location.href='modifcar.php'">
@@ -36,7 +36,7 @@
     <header >
         <div class="logo" >
             <a href="../../../../public/vista/paginasHTML/index.html" title="Ir a la Pagina principal"> <img src="../../../../config/Multimedia/images/LOGO.png" alt="Logo" id="leftFloat" width="78px" height="78px"></a>
-            <h1>AGREGAR NUEVO TELEFONO</h1> 
+            <h3>AGREGAR TELEFONO</h3> 
          </div>
          </header>
 

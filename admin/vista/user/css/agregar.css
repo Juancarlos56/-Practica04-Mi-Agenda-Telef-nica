@@ -22,9 +22,10 @@
   
 }
 
-H1{
-    float: left;
-    width: 50%;
+H3{
+    margin-top: 30px;
+    float: right;
+    width: 80%;
 }
 
 
@@ -57,7 +58,7 @@ H1{
     height: 470px;
     margin-top: 3%;
     padding: 45px 45px 45px 45px;
-    background-color: #dbcece8f;
+    background-color: #cccccc8f;
     text-align: left;
     float: left;
     position: absolute;
