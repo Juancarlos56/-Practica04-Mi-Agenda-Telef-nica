@@ -12,7 +12,10 @@
     
     if ($result->num_rows > 0) {
         $_SESSION['isLogged'] = TRUE;
-        header("Location: ../../admin/vista/user/html/usuLogeado.html");
+        $_SESSION [ 'nombre_usuario' ] = $_POST [ 'correo' ];
+        $_SESSION [ 'contraseña' ] = $_POST [ 'contrasena' ];
+        header("Location: ../../admin/vista/user/html/usuLogeado.php");
+
     } else {
         header("Location: ../vista/paginasHTML/iniciarSesion.html");
     }
