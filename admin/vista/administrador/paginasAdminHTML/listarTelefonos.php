@@ -45,7 +45,7 @@ que aparecerá en la página web-->
                 
                 <nav id="menu">
                     <ol>       
-                        <li><a href="agregar.html">Agregar</a> </li>
+                        <li><a href="agregar.php">Agregar</a> </li>
                         <li><a href="modificar.html">Modificar</a> </li>
                         <li><a href="eliminar.html">Eliminar</a> </li>
                         <li><a href="listarTelefonos.php">Buscar y Listar</a> </li>
@@ -78,13 +78,13 @@ que aparecerá en la página web-->
             </select>
             <!--AJAX-->
             <form id="Formulario01" onsubmit="return buscarPorCedula()" style="display: inline;">
-                <input type="text" id="cedula" name="cedula" value="" onkeyup="return buscarPorCedula()" onblur="buscarPorCedula()">
+                <input type="text" id="cedula" name="cedula" value=" " onkeyup="return buscarPorCedula()" onblur="buscarPorCedula()">
                 <input type="button" id="buscarCed" name="buscarCed" value="Buscar" onclick="buscarPorCedula()">
             </form>
 
             <form id="Formulario02" onsubmit="return buscarPorCorreo()" style="display: none;">
                 
-                <input type="text" id="correo" name="correo" value="" onkeyup="return buscarPorCorreo()" onblur="buscarPorCorreo()">
+                <input type="text" id="correo" name="correo" value=" " onkeyup="return buscarPorCorreo()" onblur="buscarPorCorreo()">
                 <input type="button" id="buscar" name="buscar" value="Buscar" onclick="buscarPorCorreo()">
             </form>
             
