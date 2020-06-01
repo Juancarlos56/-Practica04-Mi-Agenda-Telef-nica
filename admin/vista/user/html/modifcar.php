@@ -14,7 +14,7 @@
         </style>
     <title>Document</title>
 </head>
-<body background="../../../../config/Multimedia/imagenesParaSesion/fondoAgregar.png">
+<body background="../../../../config/Multimedia/imagenesParaSesion/fondoCuenta.png">
  
 
     <header >
