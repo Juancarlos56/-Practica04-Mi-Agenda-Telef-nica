@@ -1,25 +1,3 @@
-function elegir(elemento){
-     
-    switch (elemento.value) {
-        case 'AGREGAR':
-          console.log('El kilogramo de Naranjas cuesta $0.59.');
-          break;
-        case 'MODIFICAR':
-          console.log('El kilogramo de Manzanas cuesta $0.32.');
-          break;
-        case 'BUSCAR':
-          console.log('El kilogramo de Bananas cuesta $0.48.');
-          break;
-        case 'ELIMINAR':
-          console.log('El kilogramo de Cerezas cuesta $3.00.');
-          break;
-        case 'CUENTA':
-          console.log('El kilogramo de Mangos y Papayas cuesta $2.79.');
-          break;
-        default:
-          console.log('Lo lamentamos, por el momento no disponemos de ');
-      }   
-}
 
 
 function buscarPorCedula() {
