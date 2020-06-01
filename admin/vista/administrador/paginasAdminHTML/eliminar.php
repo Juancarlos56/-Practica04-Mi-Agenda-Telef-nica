@@ -1,42 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
-<!--head es utilizado para marcar información sobre el documento-->
+<html lang="en">
 <head>
-    <!--  
-        Information about Indie Rock page
-        Author: Juan Carlos Barrera Barrera  
-        Date:  04/04/2020 
-        Filename: contactos.html 
-    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indie Rock</title>
-    <!--metadatos para la pagina Indie Rock-->
-    <meta name="keywords" content="Indie Rock, musica, Juan, rock, videos" />
+    <title>usuarioLogeado</title>
+    
+    <!--<link rel="stylesheet" href="../cssAdmin/agregar.css">-->
     <link rel="stylesheet" href="../cssAdmin/pageHome.css">
-    <link rel="stylesheet" href=" ../cssAdmin/estilosCSS.css" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="../cssAdmin/estilosListarTelefonos.css" type="text/css" media="screen"/>
-    <script src="../jsAdmin/listarTelefonos.js" type="text/javascript"></script>
-    
+    <link rel="stylesheet" href="../cssAdmin/estilos.css" type="text/css" media="screen"/>
     <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
-    
     <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
-    
-
-
+    <script src="../jsAdmin/eliminarClientes.js" type="text/javascript"></script>
 </head>
-<!--etiqueta body se utiliza para marcar el contenido
-que aparecerá en la página web-->
-<body>
+<body background="../../../../config/Multimedia/imagenesParaSesion/fondoAgregar.png">
 
     <?php  
+        include '../../../../config/conexionBD.php';
         session_start();
         if(!isset($_SESSION['isLogged'])|| $_SESSION['isLogged'] === false ){
-            header("Location: ../../../../public/vista/paginasHTML/iniciarSesion.html");
+            header("Location: ../../../../public/vista/paginasHTML/index.html");
         }
+
+        $correo = $_SESSION['nombre_usuario']; 
+        $cedula = $_SESSION ['cedula'];
+        $codigo = $_SESSION['codigo'];
+        
+        $sql = "SELECT * FROM telefonos where usu_codigo=$codigo";
+        $result = $conn->query($sql);
+
     ?>
+
+
+
     <header>
         <div class="logo">
             <a href="paginaAdmi.php" title="Ir a la Pagina principal"> <img src="../../../../config/Multimedia/images/LOGO.png" alt="Logo" id="leftFloat"> </a>
@@ -59,13 +54,11 @@ que aparecerá en la página web-->
         </div>
     </header>
 
-    <!--Esta es la barra de navegación principal del sitio. Sirve para definir 
-        una zona de navegación con vínculos entre las diferentes páginas.-->  
     <div class="separador"> </div>
 
-    <section class="seccion1">
-        
-        <div class="separador"> </div>
+    <section>
+       
+        <div class="separador"> 
 
         <article class="listado">
             <header>
@@ -79,13 +72,13 @@ que aparecerá en la página web-->
             </select>
             <!--AJAX-->
             <form id="Formulario01" onsubmit="return buscarPorCedula()" style="display: inline;">
-                <input type="text" id="cedula" name="cedula" value=" " onkeyup="return buscarPorCedula()" onblur="buscarPorCedula()">
+                <input type="text" id="cedula" name="cedula" value="">
                 <input type="button" id="buscarCed" name="buscarCed" value="Buscar" onclick="buscarPorCedula()">
             </form>
 
             <form id="Formulario02" onsubmit="return buscarPorCorreo()" style="display: none;">
                 
-                <input type="text" id="correo" name="correo" value=" " onkeyup="return buscarPorCorreo()" onblur="buscarPorCorreo()">
+                <input type="text" id="correo" name="correo" value="">
                 <input type="button" id="buscar" name="buscar" value="Buscar" onclick="buscarPorCorreo()">
             </form>
             
@@ -94,39 +87,7 @@ que aparecerá en la página web-->
 
 
         </article>
-        
-        
+            
     </section>
-
-    <div class="separador"> </div>
-
-    <footer class="footer">
-        <!--A nivel de página sería la típica zona en la parte baja de la web, donde 
-            se suelen incluir datos de contacto, enlaces, etc-->
-        <div class="container6">
-
-            <span class="btnFacebook">
-                <img src="../../../../config/Multimedia/imagesCSS/facebook.png" alt="Acceder a la cuenta">
-            </span>
-
-            <span class="btnInstagram">
-                <img src="../../../../config/Multimedia/imagesCSS/instagram.png" alt="Enviar mensaje">
-            </span>
-
-            <div class="estiloPiePagina">
-                <div>
-                    <a href="index.html" title="Ir a la Pagina principal">  
-                        <img id="footerlogo" src="../../../../config/Multimedia/images/LOGO.png" alt="logo" > 
-                    </a>
-                </div>
-                <p>
-                    &#169;Todos los derechos reservados.
-                </p>
-            </div>
-           
-        </div>   
-        
-        
-    </footer>
 </body>
 </html>
