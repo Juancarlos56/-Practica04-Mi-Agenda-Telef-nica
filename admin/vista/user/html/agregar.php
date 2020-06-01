@@ -38,8 +38,9 @@
 
     <div class="separador"> 
 
-  <form class="menuHorizontal" id= "menu" method="POST" action="../../../controladores/user/telefono/modificar.php" > 
+  <form class="menuHorizontal" id= "menu" method="POST" action="../../../controladores/user/telefono/agregarTelefono.php" > 
 
+    <input type='hidden' id="codigo" name="codigo" value="<?php $codigo?>">
     <label for="cedula">CEDULA:</label>
     <input type="text"  id="cedula" name="cedula"   value="<?php echo "$cedula" ?>" onclick ="return buscarPorCedula()">
 
@@ -56,7 +57,7 @@
 
     
     <input class="agregar" type="button" id="agregar" name="agregar" value="AGREGAR" onclick="agregar()">
-    <input type="submit" id="modificar" name="modificar" value="Modificar" />
+    <input type="submit" id="modificar" name="modificar" value="Agregar" />
    </form>
 
    <div class="separador"> 
