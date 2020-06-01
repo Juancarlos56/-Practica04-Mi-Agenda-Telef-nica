@@ -33,7 +33,7 @@
         <br>
 
         <input type="submit" id="modificar" name="modificar" value="Modificar" />
-        <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
+        <input type="reset" id="cancelar" name="cancelar" value="Cancelar" onclick=" location.href=' cuenta.php'" />
     </form>
 </body>
 </html>

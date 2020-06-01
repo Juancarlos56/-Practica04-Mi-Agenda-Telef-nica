@@ -28,6 +28,7 @@
     <input type="button"  id="modificar" name="modificar" value="MODIFICAR USUARIO" onclick ="location.href='modificarUsuario.php'">
     <input type="button"  id="eliminar" name="eliminar" value="ELIMINAR USUARIO" onclick="location.href='eliminarUsuario.php'" >  
     <input type="button"  id="cuenta" name="cuenta" value="CAMBIAR CONTRASENA" onclick="location.href='cambiarContrasena.php'"  > 
+    <input type="button"  id="cuenta" name="cuenta" value="VOLVER" onclick="location.href='usuLogeado.php'"  > 
    </form> 
 
     

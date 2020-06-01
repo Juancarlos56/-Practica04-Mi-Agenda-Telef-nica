@@ -1,0 +1,71 @@
+
+
+.menuHorizontalCompleto {
+
+    width: 10%;
+    height: 90px;
+ }
+ 
+ .logo {
+   float: left;
+ }
+ 
+ .menuHorizontal{
+    width: 90%;
+    float: left;
+    /* width: 52%; */
+  
+ }
+ 
+ H1{
+    float: left;
+ }
+ 
+ #menu{
+    width: 70%;
+    height: 400px;
+    margin-top: 9%;
+    padding: 45px 45px 45px 45px;
+    background-color: #e6e6e68f;
+    text-align: left;
+    float: left;
+    position: absolute;
+    margin-left: 10%;
+ }
+ 
+ 
+ #menu input{
+   font-size: 15px;
+   padding: 10px 10px 10px 10px;
+   margin-left: 34%;
+   background-color: #f7f7f7;
+   color: #151514;
+   text-align: center;
+   display: list-item;
+   font-family: none;
+   border-style: none;
+   /* margin-bottom: 0%; */
+   width: 37%;
+ }
+ 
+ #menu input #agregar {
+       border-bottom: bisque;
+ }
+ 
+ #menu label{
+    font-size: 25px;
+    text-align: left;
+ }
+ 
+ .separador {
+    width: 100%;
+    height: 0px;
+    background-color: white;
+    clear: both;
+ }
+ 
+ 
+ .salidas {
+    width: 100%;
+    height: 100px;
+ } 

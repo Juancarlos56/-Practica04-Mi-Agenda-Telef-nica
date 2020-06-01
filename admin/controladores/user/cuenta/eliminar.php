@@ -7,7 +7,7 @@
 <body>
 <?php
  //incluir conexión a la base de datos
- include '../../../config/conexionBD.php';
+ include '../../../../config/conexionBD.php';
  $codigo = $_POST["codigo"];
 
  //Si voy a eliminar físicamente el registro de la tabla
@@ -21,7 +21,7 @@ usu_codigo = $codigo";
  } else {
  echo "<p>Error: " . $sql . "<br>" . mysqli_error($conn) . "</p>";
  }
- echo "<a href='../../vista/usuario/index.php'>Regresar</a>";
+ echo "<a  href= '../../../../public/vista/paginasHTML/index.html'>Regresar</a>";
  $conn->close();
 ?>
 </body>
