@@ -9,7 +9,7 @@
     $cedula = "";
     $codigo = "";
     $sql = "SELECT * FROM usuario WHERE usu_correo = '$usuario' and usu_password = MD5('$contrasena')";
-    
+    $estado = "";
     $result = $conn->query($sql);
     
     if ($result->num_rows > 0) {
@@ -17,6 +17,7 @@
              $rol = $row['usu_rol'];
              $cedula = $row['usu_cedula'];
              $codigo = $row ['usu_codigo'];
+             $estado = $row ['usu_eliminado'];
         }
        
         $_SESSION['isLogged'] = TRUE;
@@ -26,11 +27,11 @@
         $_SESSION [ 'cedula'] = $cedula;
         $_SESSION [ 'codigo'] = $codigo;
         
-        if (($rol == 'admin')||($rol == 'ADMIN')) {
+        if ((($rol == 'admin')||($rol == 'ADMIN')&&($estado == "N"))) {
             header("Location: ../../admin/vista/administrador/paginasAdminHTML/paginaAdmi.php");
         }
 
-        if (($rol == 'user')||($rol == 'USER')) {
+        if ((($rol == 'user')||($rol == 'USER')&&($estado == "N"))) {
             header("Location: ../../admin/vista/user/html/usuLogeado.php");
         }
         
