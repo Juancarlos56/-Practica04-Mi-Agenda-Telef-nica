@@ -72,13 +72,13 @@ function validarLetras(elemento) {
     var letrasVal = '';
     var valorCadena = "";
 
-    elemento.value = elemento.value.trim();
-    valorCadena = elemento.value.trim() + " ";
+    valorCadena = elemento.value;
 
     if(elemento.value.length > 0){
         for (var i = 0; i < elemento.value.length; i++) {
             miAscii = elemento.value.charCodeAt(i);
-            if((miAscii >= 97 && miAscii <= 122) || (miAscii === 32) || (miAscii >= 65 && miAscii <= 90)){
+            console.log("mi ascci"+miAscii)
+            if((miAscii >= 97 && miAscii <= 122) || (miAscii == 32) || (miAscii >= 65 && miAscii <= 90)){
                
             }else {
                 letrasVal = valorCadena.substring(0, i) + valorCadena.substring(i+1, elemento.value.length);
@@ -279,6 +279,21 @@ function numeroTelefono(elemento){
     }else{
         elemento.value = "";
         document.getElementById('mensajeTelefono').innerHTML = 'El telefono debe constar de 10 numeros para moviles o 7 para fijos';
+        return false;
+        
+    }
+}
+
+function validarDireccion(elemento){
+  
+    if(elemento.value.length > 3){
+        console.log("direccion correcta ");
+        document.getElementById('mensajeDireccion').innerHTML = 'Direccion correcta';
+        document.getElementById('mensajeDireccion').style.color = '#00BB2D';
+        return true;
+    }else{
+        elemento.value = "";
+        document.getElementById('mensajeDireccion').innerHTML = 'Direccion incorrecta';
         return false;
         
     }
